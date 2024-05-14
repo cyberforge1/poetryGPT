@@ -1,0 +1,19 @@
+// App.scss
+
+html, body {
+    margin: 0; // Remove default margin
+    padding: 0; // Remove default padding
+    width: 100%; // Set width to 100% of the viewport
+    height: 100%; // Set height to 100% of the viewport
+    overflow: hidden; // Prevent scrollbars
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    margin: 0; // Ensure there's no additional margin
+    padding: 0; // Ensure there's no additional padding
+    background-color: #e5e5e5;
+    overflow: hidden; // Prevents any overflow from causing scrollbars
+    
+}

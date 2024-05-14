@@ -1,0 +1,46 @@
+/* Message.scss */
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    word-wrap: break-word; /* This handles long words or URLs */
+    white-space: pre-wrap; /* This is crucial for preserving line breaks */
+    word-break: break-word; /* Ensures long words break correctly */
+
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px; // Size of the icon container
+        height: 30px;
+        border-radius: 50%; // Makes the image circular
+        overflow: hidden; // Ensures nothing spills outside the circular shape
+    }
+
+    .messageText {
+        flex: 1;
+        padding: 8px;
+        border-radius: 12px;
+        margin: 0; /* Remove default margin */
+        font-size: 16px; /* Consistent font size */
+    }
+
+    &.userMessage {
+        .icon {
+            background-color: rgb(195,222,247); // Blue background for user
+        }
+        .messageText {
+            background-color: rgb(195,222,247); // Light blue background for user text
+        }
+    }
+
+    &.aiMessage {
+        .icon {
+            background-color: white; // White background for AI icon
+        }
+        .messageText {
+            background-color: rgb(245,211,230); // Light red background for AI text
+        }
+    }
+}

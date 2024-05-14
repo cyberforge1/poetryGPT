@@ -1,0 +1,23 @@
+// SquareButton.scss
+
+.squareButton {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(213,237,245);
+  
+    &:hover {
+      background-color: rgb(245,211,230);
+    }
+  
+    svg {  // Targeting the SVG element directly
+      width: 20px;  // Adjust width as needed
+      height: 20px;  // Adjust height as needed
+    }
+  }

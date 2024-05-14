@@ -1,0 +1,21 @@
+// InputBar.scss
+
+.inputBar {
+    display: flex;
+    width: 45%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+
+    .inputField {
+        flex-grow: 1;
+        margin-right: 10px; // Ensure this margin does not push the button out
+        height: 100%;
+        border-radius: 5px;
+        border: 1px solid white;
+        width: 100%;
+        height: 80%;
+    }
+
+}

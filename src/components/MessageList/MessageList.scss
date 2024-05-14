@@ -1,0 +1,10 @@
+//MessageList.scss
+
+.messageList {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px 20px;
+    background-color: whitesmoke; // A light grey background
+    width: 50%; // Set the width to 80% of the parent container
+    margin: 0 auto; // Center the element horizontally
+}
