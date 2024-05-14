@@ -6,10 +6,16 @@ const apiKey: string = import.meta.env.VITE_OPENAI_API_KEY || '';
 const apiUrl: string = import.meta.env.VITE_OPENAI_API_URL || '';
 const model: string = import.meta.env.VITE_OPENAI_MODEL || '';
 
+interface Message {
+    content: string;
+}
+
+interface Choice {
+    message: Message;
+}
+
 interface CompletionResponse {
-    choices: {
-        message: string;
-    }[];
+    choices: Choice[];
 }
 
 export const generateCompletion = async (prompt: string): Promise<string> => {
