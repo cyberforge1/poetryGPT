@@ -1,0 +1,16 @@
+/* MessageInput.scss */
+
+.messageInput {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  width: 50%;
+  margin: 0 auto; // Center horizontally
+  height: 60px;
+  border-radius: 10px;
+  background-color: white;
+
+  .inputBar {
+    flex: 1; // Take up remaining space
+  }
+}

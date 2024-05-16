@@ -11,6 +11,7 @@
     color: white;
     cursor: pointer;
     background-color: rgb(213,237,245);
+    margin-right: 20px;
   
     &:hover {
       background-color: rgb(245,211,230);
@@ -21,3 +22,9 @@
       height: 20px;  // Adjust height as needed
     }
   }
+
+.spacer {
+  display: flex;
+  align-items: center;
+  height: 60px;
+} 

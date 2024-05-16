@@ -1,35 +1,11 @@
-// ChatWindow.scss
+/* ChatWindow.scss */
+
 
 .chatWindow {
     display: flex;
     flex-direction: column;
-    height: calc(100vh); // Assuming header height is 60px
+    height: 100vh; // Full height of the viewport
     background-color: whitesmoke;
-}
-
-.controlPanel {
-    display: flex;
-    justify-content: flex-end; // Aligns button to the right
-    padding: 10px 20px; // Add some padding for spacing
-}
-
-.clearMessagesButton {
-    width: 30px;        // Set width to 16px
-    height: 30px;       // Set height to 16px
-    border-radius: 3px;
-    border: 1px solid black;
-    cursor: pointer;
-}
-
-
-.controlPanel {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.poetryGPTLabel {
-    padding-left: 14px;  // Adds spacing between the button and the text
-    align-self: center;  // Centers the text vertically in the control panel
-    font-size: 18px;     // Matches the font size of the button (adjust as necessary)
-    color: #333;         // Sets the text color (choose as per your theme)
+    justify-content: center; // Center the content vertically
+    align-items: center; // Center the content horizontally
 }

@@ -1,0 +1,32 @@
+/* ChatHeader.scss */
+
+.controlPanel {
+    display: flex;
+    justify-content: flex-start; // Align content to the left
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    width: 97%;
+    height: 60px;
+  }
+  
+  .clearMessagesButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+  }
+  
+  .poetryGPTLabel {
+    margin-left: 16px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .customIconSize {
+    font-size: 22px; // Adjust the size as needed
+  }
