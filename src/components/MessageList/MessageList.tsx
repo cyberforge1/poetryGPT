@@ -1,6 +1,5 @@
 // MessageList.tsx
 
-
 import React, { useEffect, useRef } from 'react';
 import Message from '../Message/Message';
 import './MessageList.scss';
@@ -26,9 +25,15 @@ const MessageList: React.FC<Props> = ({ messages }) => {
 
   return (
     <div className="messageList" ref={messageListRef}>
-      {messages.map((message) => (
-        <Message key={message.id} text={message.text} isUser={message.isUser} />
-      ))}
+      {messages.length === 0 ? (
+        <div className="emptyMessageContainer">
+          <img src="../../../poetry-gpt-logo.png" alt="No messages" className="emptyMessageImage" />
+        </div>
+      ) : (
+        messages.map((message) => (
+          <Message key={message.id} text={message.text} isUser={message.isUser} />
+        ))
+      )}
     </div>
   );
 };

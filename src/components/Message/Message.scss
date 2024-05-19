@@ -13,8 +13,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 30px; // Size of the icon container
-        height: 30px;
+        width: 35px; // Size of the icon container
+        height: 35px;
         border-radius: 50%; // Makes the image circular
         overflow: hidden; // Ensures nothing spills outside the circular shape
         margin-right: 10px; // Add some space between the icon and the message text
@@ -39,7 +39,7 @@
 
     &.aiMessage {
         .icon {
-            background-color: white; // White background for AI icon
+            background-color: rgb(245,211,230); // White background for AI icon
         }
         .messageText {
             background-color: rgb(245,211,230); // Light red background for AI text
