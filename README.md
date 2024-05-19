@@ -10,4 +10,4 @@ This chatbot is live, click the [here](https://poetry-gpt.netlify.app/) to visit
 
 ## Screenshot
 
-![Application Screenshot](public/project-screenshot.png "Project Screenshot")
+![Application Screenshot](public/app-screenshot.png "Project Screenshot")
