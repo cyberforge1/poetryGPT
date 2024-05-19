@@ -4,7 +4,7 @@
     flex-grow: 1;
     overflow-y: auto; // Enable vertical scrolling
     padding: 10px 20px;
-    background-color: whitesmoke; // A light grey background
+    background-color: white; // A light grey background
     width: 50%; // Set the width to 50% of the parent container
     margin: 0 auto; // Center the element horizontally
 
@@ -17,3 +17,16 @@
     -ms-overflow-style: none;  // IE and Edge
     scrollbar-width: none;  // Firefox
 }
+
+@media (max-width: 600px) {
+    .messageList {
+      width: 90%;
+    }
+  }
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .messageList {
+      width: 85%;
+      margin-bottom: 15px;
+    }
+  }

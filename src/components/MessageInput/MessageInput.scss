@@ -3,14 +3,28 @@
 .messageInput {
   display: flex;
   align-items: center;
-  border: 1px solid black;
   width: 50%;
   margin: 0 auto; // Center horizontally
-  height: 60px;
+  height: 70px;
   border-radius: 10px;
-  background-color: white;
+  background-color: #F8F8FF;
+  flex-shrink: 0; // Add this line
 
   .inputBar {
     flex: 1; // Take up remaining space
+  }
+}
+
+@media (max-width: 600px) {
+  .messageInput {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .messageInput {
+    width: 85%;
+    margin-bottom: 15px;
   }
 }
