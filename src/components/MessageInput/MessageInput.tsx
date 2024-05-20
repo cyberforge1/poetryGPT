@@ -7,9 +7,10 @@ import './MessageInput.scss'; // Link to the stylesheet
 
 interface Props {
   onSendMessage: (message: string) => void;
+  isAnimating: boolean; // New prop to indicate if animation is in progress
 }
 
-const MessageInput: React.FC<Props> = ({ onSendMessage }) => {
+const MessageInput: React.FC<Props> = ({ onSendMessage, isAnimating }) => {
   const [input, setInput] = useState('');
   const [isLoading, setLoading] = useState(false);
 
@@ -28,7 +29,7 @@ const MessageInput: React.FC<Props> = ({ onSendMessage }) => {
   };
 
   const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === 'Enter' && !isLoading) {
+    if (event.key === 'Enter' && !isLoading && !isAnimating) { // Check both loading and animating state
       handleSend();
     }
   };
@@ -39,9 +40,9 @@ const MessageInput: React.FC<Props> = ({ onSendMessage }) => {
         input={input}
         onInputChange={handleInputChange}
         onKeyPress={handleKeyPress}
-        isLoading={isLoading}
+        isLoading={isLoading || isAnimating} // Disable input bar while animating
       />
-      <SquareButton onClick={handleSend} isLoading={isLoading} />
+      <SquareButton onClick={handleSend} isLoading={isLoading || isAnimating} /> {/* Disable button while animating */}
     </div>
   );
 };

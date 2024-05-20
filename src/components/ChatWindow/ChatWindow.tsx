@@ -10,6 +10,7 @@ import { generateCompletion } from '../../services/openaiService';
 
 const ChatWindow: React.FC = () => {
   const [messages, setMessages] = useState<{ id: number; text: string; isUser: boolean }[]>([]);
+  const [isAnimating, setIsAnimating] = useState(false); // New state to track animation
 
   const handleSendMessage = (newMessage: string, isUser: boolean) => {
     const newId = messages.length + 1;
@@ -22,6 +23,7 @@ const ChatWindow: React.FC = () => {
     try {
       const aiResponse = await generateCompletion(newMessage);
       console.log('AI response:', aiResponse);
+      setIsAnimating(true); // Set animating to true before animation starts
       animateAiResponse(aiResponse);
     } catch (error) {
       console.error('Failed to fetch AI response:', error);
@@ -50,6 +52,7 @@ const ChatWindow: React.FC = () => {
         });
       } else {
         clearInterval(intervalId);
+        setIsAnimating(false); // Set animating to false when animation completes
       }
     }, 50);
   };
@@ -62,7 +65,7 @@ const ChatWindow: React.FC = () => {
     <div className="chatWindow">
       <ChatHeader onClearMessages={clearMessages} />
       <MessageList messages={messages} />
-      <MessageInput onSendMessage={handleUserMessage} />
+      <MessageInput onSendMessage={handleUserMessage} isAnimating={isAnimating} /> {/* Pass isAnimating as prop */}
       <FooterMessage />
     </div>
   );
