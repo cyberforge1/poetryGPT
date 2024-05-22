@@ -6,7 +6,7 @@ A fine-tuned ChatGPT Model that responds to prompts with poetry, built using Pyt
 
 ## Deployment Link
 
-This chatbot is live, click the [here](https://poetry-gpt.netlify.app/) to visit the site!
+This chatbot is live, click [here](https://poetry-gpt.netlify.app/) to visit the site!
 
 ## Screenshot
 
