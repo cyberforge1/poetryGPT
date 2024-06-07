@@ -97,13 +97,7 @@ https://github.com/cyberforge1/chat-gpt-fine-tuning
 
 
 ## Challenges
-An interesting challenge encountered during this project involved suspected grammatical errors in the response from the API. 
-<br />
-Subsequent phrases were attached directly to previous phrases and with capitalized letters. 
-<br />
-After mistakenly trying to correct the grammar of the responses, I looked back at the training data, and realized that limericks are structured this way. 
-<br />
-Therefore, to correct this issue, all that was necessary was to break the response onto a new line when the phrase delimiter was encountered.  
+An interesting challenge encountered during this project involved suspected grammatical errors in the response from the API. Subsequent phrases were attached directly to previous phrases and with capitalized letters. After mistakenly trying to correct the grammar of the responses, I looked back at the training data, and realized that limericks are structured this way. Therefore, to correct this issue, all that was necessary was to break the response onto a new line when the phrase delimiter was encountered.  
 
 
 ## Contact Me
