@@ -9,7 +9,7 @@ A fine-tuned ChatGPT Model that responds to prompts with poetry, built using a F
 This chatbot is live, click [here](https://poetry-gpt.netlify.app/) to visit the site.
 
 
-## Application Screenshot
+## Screenshot
 ![Application Screenshot](public/app-screenshot.png "Project Screenshot")
 
 
