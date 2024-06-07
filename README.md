@@ -48,11 +48,9 @@ https://github.com/cyberforge1/chat-gpt-fine-tuning
    git clone git@github.com:cyberforge1/poetryGPT.git
 
 2. Register for an OpenAI API key at the following link.
-   ```bash
    [https://openai.com/index/openai-api/](https://openai.com/index/openai-api/)
 
 3. Create a new finely-tuned model using the following project link and copy the model name.
-   ```bash
    [https://github.com/cyberforge1/chat-gpt-fine-tuning](https://github.com/cyberforge1/chat-gpt-fine-tuning)
 
 4. Create a `.env` file in the root directory and attach the values of the keys generated in Steps 1 and 2:
