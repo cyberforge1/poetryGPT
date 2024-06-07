@@ -1,9 +1,6 @@
 # PoetryGPT - ChatGPT Fine-Tuned Model
 
 
-(Github workflow badges)
-
-
 ## Project Overview
 A fine-tuned ChatGPT Model that responds to prompts with poetry, built using Python, TypeScript and React
 
@@ -31,7 +28,7 @@ This chatbot is live, click [here](https://poetry-gpt.netlify.app/) to visit the
 ## Goals & MVP
 The aim of this project was to create a Typescript React frontend application that would imitate the current ChatGPT interface, and make API requests to a finely-tuned ChatGPT 3.5 Turbo Model that has been trained on data containing poetic responses.
 
-The project used to finely-tune this model can be found at the following link:
+The project used to fine-tune this model can be found below:
 
 https://github.com/cyberforge1/chat-gpt-fine-tuning
 
