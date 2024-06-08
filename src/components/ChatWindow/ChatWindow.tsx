@@ -4,13 +4,13 @@ import React, { useState } from 'react';
 import MessageList from '../MessageList/MessageList';
 import MessageInput from '../MessageInput/MessageInput';
 import FooterMessage from '../FooterMessage/FooterMessage';
-import ChatHeader from '../ChatHeader/ChatHeader'; // Import the new component
+import ChatHeader from '../ChatHeader/ChatHeader';
 import './ChatWindow.scss';
 import { generateCompletion } from '../../services/openaiService';
 
 const ChatWindow: React.FC = () => {
   const [messages, setMessages] = useState<{ id: number; text: string; isUser: boolean }[]>([]);
-  const [isAnimating, setIsAnimating] = useState(false); // New state to track animation
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const handleSendMessage = (newMessage: string, isUser: boolean) => {
     const newId = messages.length + 1;
@@ -23,7 +23,7 @@ const ChatWindow: React.FC = () => {
     try {
       const aiResponse = await generateCompletion(newMessage);
       console.log('AI response:', aiResponse);
-      setIsAnimating(true); // Set animating to true before animation starts
+      setIsAnimating(true);
       animateAiResponse(aiResponse);
     } catch (error) {
       console.error('Failed to fetch AI response:', error);
@@ -52,7 +52,7 @@ const ChatWindow: React.FC = () => {
         });
       } else {
         clearInterval(intervalId);
-        setIsAnimating(false); // Set animating to false when animation completes
+        setIsAnimating(false);
       }
     }, 50);
   };
@@ -65,7 +65,7 @@ const ChatWindow: React.FC = () => {
     <div className="chatWindow">
       <ChatHeader onClearMessages={clearMessages} />
       <MessageList messages={messages} />
-      <MessageInput onSendMessage={handleUserMessage} isAnimating={isAnimating} /> {/* Pass isAnimating as prop */}
+      <MessageInput onSendMessage={handleUserMessage} isAnimating={isAnimating} />
       <FooterMessage />
     </div>
   );

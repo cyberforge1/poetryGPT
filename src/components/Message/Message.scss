@@ -2,47 +2,47 @@
 
 .message {
     display: flex;
-    align-items: flex-start; /* Align items to the start (top) */
+    align-items: flex-start;
     margin-bottom: 20px;
-    word-wrap: break-word; /* This handles long words or URLs */
-    white-space: pre-wrap; /* This is crucial for preserving line breaks */
-    word-break: break-word; /* Ensures long words break correctly */
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
 
     .icon {
-        align-self: flex-start; /* Pin the icon to the top */
+        align-self: flex-start;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 35px; // Size of the icon container
+        width: 35px;
         height: 35px;
-        border-radius: 50%; // Makes the image circular
-        overflow: hidden; // Ensures nothing spills outside the circular shape
-        margin-right: 10px; // Add some space between the icon and the message text
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
     }
 
     .messageText {
         flex: 1;
         padding: 8px;
         border-radius: 12px;
-        margin: 0; /* Remove default margin */
-        font-size: 16px; /* Consistent font size */
+        margin: 0;
+        font-size: 16px;
     }
 
     &.userMessage {
         .icon {
-            background-color: rgb(195,222,247); // Blue background for user
+            background-color: rgb(195,222,247);
         }
         .messageText {
-            background-color: rgb(195,222,247); // Light blue background for user text
+            background-color: rgb(195,222,247);
         }
     }
 
     &.aiMessage {
         .icon {
-            background-color: rgb(245,211,230); // White background for AI icon
+            background-color: rgb(245,211,230);
         }
         .messageText {
-            background-color: rgb(245,211,230); // Light red background for AI text
+            background-color: rgb(245,211,230);
         }
     }
 }

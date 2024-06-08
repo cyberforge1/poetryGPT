@@ -1,7 +1,7 @@
 // FooterMessage.tsx
 
 import React from 'react';
-import './FooterMessage.scss'; // Link to the stylesheet for styling
+import './FooterMessage.scss';
 
 const FooterMessage: React.FC = () => {
     return (

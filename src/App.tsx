@@ -1,7 +1,7 @@
 /* App.tsx */
 
 import React from 'react';
-import './App.scss'; // Main styles, if needed
+import './App.scss';
 import ChatWindow from './components/ChatWindow/ChatWindow';
 
 const App: React.FC = () => {

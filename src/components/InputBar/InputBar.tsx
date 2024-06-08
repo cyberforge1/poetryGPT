@@ -19,7 +19,7 @@ const InputBar: React.FC<Props> = ({ input, onInputChange, onKeyPress, isLoading
         value={input}
         onChange={onInputChange}
         onKeyPress={onKeyPress}
-        placeholder="Message PoetryGPT..." // This placeholder will show when input is empty
+        placeholder="Message PoetryGPT..."
         disabled={isLoading}
       />
     </div>

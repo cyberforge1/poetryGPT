@@ -30,7 +30,6 @@ export const generateCompletion = async (prompt: string): Promise<string> => {
             }
         });
         console.log(response.data.choices[0].message.content);
-        // Extract only the 'content' from the response object
         return response.data.choices[0].message.content;
     } catch (error) {
         console.log('There was an error')

@@ -3,11 +3,11 @@
 import React, { useState } from 'react';
 import InputBar from '../InputBar/InputBar';
 import SquareButton from '../SquareButton/SquareButton';
-import './MessageInput.scss'; // Link to the stylesheet
+import './MessageInput.scss';
 
 interface Props {
   onSendMessage: (message: string) => void;
-  isAnimating: boolean; // New prop to indicate if animation is in progress
+  isAnimating: boolean;
 }
 
 const MessageInput: React.FC<Props> = ({ onSendMessage, isAnimating }) => {
@@ -22,14 +22,14 @@ const MessageInput: React.FC<Props> = ({ onSendMessage, isAnimating }) => {
     if (input.trim()) {
       setLoading(true);
       const messageToSend = input;
-      setInput(''); // Reset the input field before sending the message
+      setInput('');
       await onSendMessage(messageToSend);
       setLoading(false);
     }
   };
 
   const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === 'Enter' && !isLoading && !isAnimating) { // Check both loading and animating state
+    if (event.key === 'Enter' && !isLoading && !isAnimating) {
       handleSend();
     }
   };
@@ -40,9 +40,9 @@ const MessageInput: React.FC<Props> = ({ onSendMessage, isAnimating }) => {
         input={input}
         onInputChange={handleInputChange}
         onKeyPress={handleKeyPress}
-        isLoading={isLoading || isAnimating} // Disable input bar while animating
+        isLoading={isLoading || isAnimating}
       />
-      <SquareButton onClick={handleSend} isLoading={isLoading || isAnimating} /> {/* Disable button while animating */}
+      <SquareButton onClick={handleSend} isLoading={isLoading || isAnimating} />
     </div>
   );
 };

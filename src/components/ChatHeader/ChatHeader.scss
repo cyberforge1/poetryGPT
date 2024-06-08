@@ -2,7 +2,7 @@
 
 .controlPanel {
     display: flex;
-    justify-content: flex-start; // Align content to the left
+    justify-content: flex-start;
     align-items: center;
     padding: 10px;
     background-color: white;
@@ -28,5 +28,5 @@
   }
 
   .customIconSize {
-    font-size: 22px; // Adjust the size as needed
+    font-size: 22px;
   }

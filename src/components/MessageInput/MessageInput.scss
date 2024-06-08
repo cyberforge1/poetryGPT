@@ -4,14 +4,14 @@
   display: flex;
   align-items: center;
   width: 50%;
-  margin: 0 auto; // Center horizontally
+  margin: 0 auto;
   height: 70px;
   border-radius: 10px;
   background-color: #F8F8FF;
-  flex-shrink: 0; // Add this line
+  flex-shrink: 0;
 
   .inputBar {
-    flex: 1; // Take up remaining space
+    flex: 1;
   }
 }
 
