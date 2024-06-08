@@ -55,7 +55,7 @@ https://github.com/cyberforge1/chat-gpt-fine-tuning
 
    [https://github.com/cyberforge1/chat-gpt-fine-tuning](https://github.com/cyberforge1/chat-gpt-fine-tuning)
 
-4. Create a `.env` file in the root directory and attach the values of the keys generated in Steps 1 and 2:
+4. Create a `.env` file in the root directory and attach the values of the keys and finely-tuned model generated in Steps 2 and 3:
 
     ```plaintext
     VITE_OPENAI_API_KEY= replace_with_your_openai_api_key
