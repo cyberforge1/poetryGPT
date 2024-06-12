@@ -46,7 +46,6 @@ https://github.com/cyberforge1/chat-gpt-fine-tuning
 1. Clone the project from GitHub:
    ```bash
    git clone git@github.com:cyberforge1/poetryGPT.git
-```
 
 2. Register for an OpenAI API key at the following link.
 
