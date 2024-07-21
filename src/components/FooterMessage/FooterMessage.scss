@@ -1,0 +1,26 @@
+// FooterMessage.scss
+
+.footerMessage {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: (245, 245, 245);
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .footerMessage {
+      margin-bottom: 50px;
+    }
+  }
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .footerMessage {
+      margin-bottom: 15px;
+    }
+  }

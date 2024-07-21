@@ -1,0 +1,48 @@
+/* Message.scss */
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+
+    .icon {
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+    }
+
+    .messageText {
+        flex: 1;
+        padding: 8px;
+        border-radius: 12px;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    &.userMessage {
+        .icon {
+            background-color: rgb(195,222,247);
+        }
+        .messageText {
+            background-color: rgb(195,222,247);
+        }
+    }
+
+    &.aiMessage {
+        .icon {
+            background-color: rgb(245,211,230);
+        }
+        .messageText {
+            background-color: rgb(245,211,230);
+        }
+    }
+}

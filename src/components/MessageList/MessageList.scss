@@ -1,0 +1,44 @@
+// MessageList.scss
+
+.messageList {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px 20px;
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  @media (max-width: 600px) {
+    .messageList {
+      width: 90%;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 1200px) {
+    .messageList {
+      width: 85%;
+      margin-bottom: 15px;
+    }
+  }
+  
+  .emptyMessageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: -20px;
+  }
+  
+  .emptyMessageImage {
+    max-width: 125px;
+    max-height: 125px;
+  }
+  
