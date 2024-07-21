@@ -95,10 +95,6 @@ https://github.com/cyberforge1/chat-gpt-fine-tuning
 - Building an interface to directly resemble an existing application
 - Selecting TypeScript to build with React for the first time
 
-## Project Diagram
-![Project Diagram](public/project-diagram.png "Project Diagram")
-
-
 ## Known Issues
 - Issues with clashing data in the animation function when another request is submitted before the initial request has completed.
 
