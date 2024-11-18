@@ -2,7 +2,7 @@
 
 
 ## Project Overview
-A fine-tuned ChatGPT Model that responds to prompts with poetry, built using a Fine-Tuned ChatGPT Model, TypeScript and React.
+An interactive chatbot that provides poetic responses using a finely-tuned ChatGPT model. Developed with TypeScript React, SCSS, and the OpenAI API.
 
 
 ## Deployment Link
